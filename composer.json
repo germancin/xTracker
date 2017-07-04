@@ -1,5 +1,5 @@
 {
-    "name": "root/workspace",
+    "name": "germancin/x-tracker",
     "description": "Tracks in seconds/miliseconds how long a loop, query, method it takes to run.",
     "type": "composer-plugin",
     "require": {
