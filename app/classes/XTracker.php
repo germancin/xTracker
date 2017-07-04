@@ -28,7 +28,7 @@ class XTracker
 		if($resultInt == 0){
 			$total = $message . ' <b>' . $resultFloat . ' miliseconds. </b>';
 		}else{
-			$total = $message . ' <b>' . date('H:i:s', $resultInt) . '.</b>';
+			$total = $message . ' <b>' . date('H:i:s', $resultInt) . '</b>';
 		}
 		return $total;
 	}
