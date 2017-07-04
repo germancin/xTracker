@@ -2,13 +2,6 @@
     "name": "germancin/x-tracker",
     "description": "Tracks in seconds/miliseconds how long a loop, query, method it takes to run.",
     "type": "composer-plugin",
-    "require": {
-        "fzaninotto/faker": "^1.6",
-        "php": "^5.5.9 || ^7.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^4.8"
-    },
     "license": "MIT",
     "authors": [
         {
