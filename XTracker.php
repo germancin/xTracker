@@ -1,36 +1,20 @@
 <?php
 namespace App;
-
 class XTracker
 {
-	protected $start;
-	protected $end;
-
-	private function setMicrotime($att=true){
+	public function setMicrotime($att=true){
 		 return microtime($att);
 	}
-
-	public  function start(){
-		$this->start = $this->setMicrotime();
-		return $this->start;
-	}
-
-	public  function end($att=true){
-		$this->end = $this->setMicrotime();
-		return $this->end;
-	}
-
-	public  function total($message = 'total:'){
-
-		$resultInt = (int)$this->end - (int)$this->start;
-		$resultFloat = (float)$this->end - (float)$this->start;
+	public  function total($start, $end){
+		$resultInt = (int)$end - (int)$start;
+		$resultFloat = (float)$end - (float)$start;
 
 		if($resultInt == 0){
-			$total = $message . ' <b>' . $resultFloat . ' miliseconds. </b>';
+			return $resultFloat;
 		}else{
-			$total = $message . ' <b>' . date('H:i:s', $resultInt) . '</b>';
+			return date('H:i:s', $resultInt);
 		}
-		return $total;
+
 	}
 
 	public function memoryUse(){

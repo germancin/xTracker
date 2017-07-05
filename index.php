@@ -1,12 +1,10 @@
 <?php
 require "vendor/autoload.php";
-
 use App\XTracker;
 
 $tracker = new XTracker();
-
-$tracker->start();
-sleep(3);
-$tracker->end();
-echo $tracker->total();
+var_dump($tracker);
+// sleep(3);
+// $end = $tracker->setMicrotime();
+// echo $tracker->total($start, $end);
 

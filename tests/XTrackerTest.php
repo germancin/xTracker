@@ -10,16 +10,16 @@ use PHPUnit\Framework\TestCase;
 * is more readable.
 */
 class XTrackerTest extends TestCase{
+
 	public function setUp(){
 		$this->xtracker = new XTracker();
-		$this->start = 5;
-		$this->end = 8;
+
 	}
 
 	public function testTotal(){
-		$output = $this->xtracker->total($input);
+		$output = $this->xtracker->total();
 		$this->assertEquals(
-				2,
+				3,
 				$output,
 				'The rest have to be equals to 3'
 			);
